@@ -9,6 +9,10 @@
 
 A desktop ERP application for small CNC machining job shops, built to give shop owners a clear, per-process view of what each part actually costs to produce — and what it actually earns.
 
+## Demo
+
+<!-- VIDEOYU BU SATIRA SÜRÜKLEYİN -->
+
 ## The Problem
 
 In a job shop, a single part often passes through several machines and operators before it's finished — turning, milling, grinding, and so on. Each of those steps has its own labor cost, machine time, tooling wear, and setup overhead. Without a system to track this, shop owners typically price jobs off gut feeling or a single blended margin, with no visibility into which specific processes are actually profitable and which are quietly eating the margin.
