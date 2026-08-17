@@ -1,0 +1,10 @@
+PySide6==6.7.2
+pyqtdarktheme-fork==2.3.6
+SQLAlchemy==2.0.32
+psycopg2-binary==2.9.9
+alembic==1.13.2
+matplotlib==3.9.2
+bcrypt==4.2.0
+pytest==8.3.2
+pyinstaller==6.21.0
+pyinstaller-hooks-contrib==2026.6
