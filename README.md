@@ -50,6 +50,60 @@ This application solves that by:
 
 ## Architecture
 
+```mermaid
+flowchart TB
+    subgraph UI["UI — app/ui (PySide6)"]
+        Login["login_window.py"]
+        Main["main_window.py"]
+        Pages["pages/admin, pages/staff"]
+        Widgets["widgets/ (tables, filters, inputs, cards)"]
+    end
+
+    subgraph SVC["Services — app/services (business logic)"]
+        Cost["cost_service"]
+        Planning["planning_service"]
+        Production["production_service"]
+        Analytics["analytics_service"]
+        Report["report_service"]
+        Other["customer / machine / personnel / tool / settings services"]
+    end
+
+    subgraph REPO["Repositories — app/repositories (plain DB access)"]
+        Repos["work_order, machine, personnel, tool, customer,\ndaily_production, daily_report, expense repositories"]
+    end
+
+    subgraph MODEL["Models — app/models (SQLAlchemy ORM)"]
+        Models["one file per table"]
+    end
+
+    subgraph CORE["Core — app/core"]
+        Config["config.py"]
+        DB["database.py (session)"]
+        Security["security.py (bcrypt)"]
+        ErrorHandler["error_handler.py"]
+        TimeParser["time_parser.py"]
+    end
+
+    Postgres[("PostgreSQL")]
+    Alembic["Alembic migrations"]
+
+    Login --> Main
+    Main --> Pages
+    Pages --> Widgets
+    Pages --> SVC
+    SVC --> REPO
+    REPO --> MODEL
+    MODEL --> DB
+    DB --> Postgres
+    Alembic --> Postgres
+    Config --> DB
+    Security --> Login
+    ErrorHandler -.-> Main
+    TimeParser -.-> SVC
+```
+
+![CNC Cost Tracker architecture diagram](assets/architecture-diagram.svg)
+
 ```
 app/
 ├── core/          # config loading, DB session, password hashing, error handling, time parsing
