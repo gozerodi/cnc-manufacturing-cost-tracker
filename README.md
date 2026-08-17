@@ -1,5 +1,12 @@
 # CNC Manufacturing Cost Tracker
 
+![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?style=flat-square&logo=python&logoColor=white)
+![UI](https://img.shields.io/badge/UI-PySide6%20%28Qt%29-41CD52?style=flat-square&logo=qt&logoColor=white)
+![Database](https://img.shields.io/badge/Database-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Domain](https://img.shields.io/badge/Domain-Manufacturing%20ERP-C0392B?style=flat-square)
+
+`Libraries:` ![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?style=flat-square) ![Alembic](https://img.shields.io/badge/Alembic-4B8BBE?style=flat-square) ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat-square&logo=python&logoColor=white) ![bcrypt](https://img.shields.io/badge/bcrypt-8E44AD?style=flat-square) ![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white) ![PyInstaller](https://img.shields.io/badge/PyInstaller-2C3E50?style=flat-square)
+
 A desktop ERP application for small CNC machining job shops, built to give shop owners a clear, per-process view of what each part actually costs to produce — and what it actually earns.
 
 ## The Problem
