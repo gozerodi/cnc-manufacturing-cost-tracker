@@ -11,7 +11,11 @@ A desktop ERP application for small CNC machining job shops, built to give shop 
 
 ## Demo
 
-<!-- VIDEOYU BU SATIRA SÜRÜKLEYİN -->
+
+
+https://github.com/user-attachments/assets/51362dc9-85de-4ecc-b42c-b8c2d14bac66
+
+
 
 ## The Problem
 
